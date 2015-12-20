@@ -30,7 +30,7 @@ lines(mydata1$DateTime, mydata1$Sub_metering_2,
 lines(mydata1$DateTime, mydata1$Sub_metering_3, 
       type = "l", col = "blue")
 #adding the legeng in the top right
-legend("topright", lty = c(1,1,1), col = c("black", "red", "blue"), 
+legend("topright", lty = c(1,1,1), col = c("black", "red", "blue"), cex = 0.9,
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 #saving the plot as .png file, quietly
 invisible(dev.copy(png, 'plot3.png'))
